@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --dark: #070707be;
+    --body: #888;
+}
+
+
+#navicon{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.nav-item:hover{
+    color: var(--dark)
+}
+
+.hero{
+    background: url(../img/pexels-alexander-nadrilyanski-7307433.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+    z-index: 2;
+}
+
+#p-color{
+    color: var(--body);
+}
+
+#sec{
+    color: var(--dark);
+}
+
+.hero::after{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(8, 8, 8, 0.274);
+    content: " ";
+    z-index: -1;
+}
+
+section{
+    padding-top: 100px;
+}
+
+#team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+}
+
+div.team{
+    height: 48vh;
+}
+
+.team{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px 0 50px 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 15px 27px rgba(0, 0, 0, 0.1);
+}
+
+#team-a{
+    background-image: url(../img/pexels-марина-шишкина-10347871.jpg);
+}
+
+#team-b{
+    background-image: url(../img/pexels-марина-шишкина-10347862.jpg);
+}
+
+#team-c{
+    background-image: url(../img/pexels-julius-holstein-1627960.jpg);
+}
+
+div.team::after{
+    height: 48vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(8, 8, 8, 0.274);
+    content: " ";
+    z-index: -1;
+    border-radius: 50px 0 50px 0;  
+}
+
+.team h2{
+    padding-top: 24vh;
+}
+
+.counter{
+    height: 55vh;
+    border-radius: 15px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+@media(max-width: 700px){
+    .counter{
+        height: 42vh;
+    }
+}
+
+div.score{
+   justify-content: center;
+   gap: 95px;
+}
+
+div.separator{
+    height: 110px;
+    width: 2px;
+    background-color: rgba(116, 116, 116, 0.712);
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+button.goal{
+    margin-left: -15px;;
+}
+
+.save-body{
+    justify-content: center;
+}
+
+button.save{
+    padding: 5px 30px;
+}
+
+.bx{
+    color: rgb(7, 119, 247);
+}
+
+.color-rule{
+    height: 5px;
+    background-image: linear-gradient(90deg, rgba(15, 150, 240, 0.774), rgba(89, 10, 216, 0.829), rgba(219, 36, 97, 0.788));
+    width: 320px;
+    max-width: auto;
+    margin-top: -5px;
+}
+
+.color-rule-b{
+    width: 170px;
+    max-width: 170px;
+    height: 5px;
+    background-image: linear-gradient(90deg, rgba(15, 150, 240, 0.774), rgba(89, 10, 216, 0.829), rgba(219, 36, 97, 0.788));
+    margin-top: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

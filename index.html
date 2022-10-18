@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head> 
+       <meta charset="UTF-8">
+       <title>Football Scores Counter App</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/styles.css"> 
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    
+
+    <body>
+      <!---navbar--->
+      <nav class="navbar navbar-expand-lg bg-light sticky-top py-3">
+         <div class="container">
+           <a id="navicon" class="navbar-brand" href="#">Counter App</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+           aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="navbar-nav ms-auto mx-4 ">
+               <li class="nav-item">
+                  <a class="nav-link" href="#team-a">Team A</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#team-b">Team B</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#team-c">Team C</a>
+               </li>
+            </ul>
+             <a href="#counter"><button class="btn btn-primary ms-auto">Counter</button></a>
+           </div>
+         </div>
+       </nav><!---//navbar--->
+      
+      <!---hero--->
+      <div class="hero vh-60 d-flex align-items-center">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col lg-7 mx-auto text-center text-white">
+                 <h1 class="col">Football Scores Counter App</h1>
+                 <p class="col">Making it easy to record and save play scores</p>
+                 <a href="#counter"><button class="btn btn-primary mx-auto">Check Counter</button></a>
+               </div>   
+            </div>   
+         </div>
+      </div><!---//hero--->
+
+
+      <!---why--->
+      <section>
+         <div class="container">
+            <div class="row text-center mx-auto">
+               <h2 id="sec">WHY I BUILT THE COUNTER APP?</h2>
+            </div>
+         </div>   
+               <div class="color-rule mx-auto mb-4 "></div>
+         <div class="container">
+            <div class="row text-center mx-auto">      
+               <p id="p-color" class="col-md-10 text-center mx-auto">Most times, while playing football in our community.
+                  we usually have the problem of scores being argued upon,
+                  at almost all time. Both teams arguing that, their scores are being 
+                  alterated. We most times go home or path ways in sad form, which 
+                  ruins the joy of our game. To avoid this in further matches, I came up
+                  with the counter app that records and saves scorelines using HTML, CSS, Bootstrap, Javascript.
+                  This method of mine, has since then made us play without settling to bad
+                  ground at the end of the game.</p>
+            </div>
+         </div>   
+      </section><!---why--->
+
+      <!---teams--->
+      <section>
+         <div class="container ">
+            <div class="row text-center">
+               <h2 id="sec">MEET THE TEAMS</h2>
+            </div>
+         </div> 
+         <div class="container ">     
+               <div class="color-rule-b mx-auto "></div> 
+            <div class="row g-4 mt-2 d-flex align-items-center text-center text-white">
+               <div class="col-img col-lg-4">
+                  <div id="team-a" class="team">
+                     <h2>Team A</h2>
+                  </div>
+               </div> 
+               <div class="col-img col-lg-4"> 
+                  <div id="team-b" class="team">
+                     <h2>Team B</h2>
+                  </div>
+               </div> 
+               <div class="col-img col-lg-4"> 
+                  <div id="team-c" class="team">
+                     <h2>Team C</h2>
+                  </div>
+               </div> 
+            </div>    
+         </div>           
+      </section><!---teams--->
+
+
+      <!---counter--->
+      <section id="counter">
+         <div id="counter-col" class="container mt-4 mb-5 ">
+            <div class="row d-flex align-items-center g-4">
+               <div class="col-lg-7 mx-auto text-center">
+                  <h2 text-dark>COUNTER APP</h2>
+                  <p id="p-color" class="text-center mx-auto mt-3">
+                     As popularly known, the football match is being played
+                     between two teams. The kick-off takes place, after the referee
+                     has tossed the coin, deciding the head and the tail. Where, the head 
+                     starts kick-off. It's this same principle we do use in playing
+                     football in my community. The head kicks-off at start of the game.
+                     when a goal is being scored, we record it by clicking on goal(for the side 
+                     that scored) and at the end of the match, we click on save, to keep our
+                     scorelines.
+                  </p>
+               </div>
+               <div class="counter col-lg-5 mx-auto">
+                  <h3 class="text-center mx-auto mt-4 text-primary">Score Counter App</h3>
+                  <div class="score d-flex align-items-center">
+                   <div class="team-a">
+                      <h5 class="py-3">Head</h5>
+                      <h5 id="count-el" class="ms-3 text-primary">0</h5>
+                      <button  class="goal btn btn-primary mt-3 mb-3 px-4" onclick="goal()">Goal</button>
+                   </div>
+                   <div class="separator"></div>
+                   <div class="team-b">
+                      <h5 class="py-3">Tail</h5>
+                      <h5 id="countb-el" class="ms-3 text-primary">0</h5>
+                      <button  class="goal btn btn-primary mt-3 mb-3 px-4" onclick="goalb()">Goal</button>
+                   </div>
+                  </div>
+                   <div class="save-body d-flex align-items-center py-3">
+                     <button class="save btn btn-primary" onclick="save()">Save</button>
+                   </div>  
+                   <h5 id="save-el" class="text-center pt-2">Final Score: </h5>
+               </div>
+            </div>
+         </div>
+      </section><!---counter--->
+
+
+      <!---footer--->
+      <section class="container">
+         <div class="row col-md-10 text-center mx-auto">
+            <P id="p-color">Made by me with <i class="bx bxs-happy-heart-eyes"></i>
+                for my community</p>
+         </div>
+      </section>
+
+
+      
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+       <script src="index.js"></script>
+    </body>
+</html>   
